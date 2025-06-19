@@ -1,5 +1,12 @@
  Cybersecurity Internship Projects
 
+ COMPANY: CODTECH IT SOLUTIONS
+ NAME: RAYI NATASHA
+ INTERN ID: CT04DF12
+ DOMAIN: CYBER SECURITY AND ETHICAL HACKING
+ DURATION:4 WEEKS
+ MENTOR:
+
 This repository contains **four practical cybersecurity tools** developed as part of an internship. Each project is implemented in Python and demonstrates core cybersecurity concepts like integrity checking, vulnerability scanning, penetration testing, and encryption.
 
 ---
