@@ -1,87 +1,57 @@
- 1. File Integrity Checker
+ Cybersecurity Internship Projects
 
--->Description
-This tool monitors changes in files by calculating and comparing hash values using SHA-256.
+This repository contains **four practical cybersecurity tools** developed as part of an internship. Each project is implemented in Python and demonstrates core cybersecurity concepts like integrity checking, vulnerability scanning, penetration testing, and encryption.
 
--->How to Run
-Run the code in Jupyter Notebook or VS Code.
+---
 
-On first run, it saves the hash values of files in the folder.
+## Project Overview
 
-On second run, it compares current hashes to the saved ones and detects:
+###  1. File Integrity Checker
+- **Purpose**: Monitors a folder for changes using SHA-256 hashes.
+- **Tech Used**: `hashlib`, `json`
+- **Run**: Use Jupyter or VS Code to detect modified, added, or deleted files.
+- **Location**: [`1_File_Integrity_Checker/`](./1_File_Integrity_Checker)
 
-❌ Deleted files
+---
 
-⚠ Modified files
+###  2. Web Vulnerability Scanner
+- **Purpose**: Identifies web app vulnerabilities like SQL Injection and XSS.
+- **Tech Used**: `requests`, `BeautifulSoup`
+- **Run**: Input a test website URL (e.g., `https://testphp.vulnweb.com`)
+- **Location**: [`2_Web_Vulnerability_Scanner/`](./2_Web_Vulnerability_Scanner)
 
-🔟 New files added
+---
 
- Inputs Needed
-Change the variable folder_to_monitor to your folder name (default: test_files).
+###  3. Penetration Testing Toolkit
+- **Purpose**: Includes Port Scanner, SSH Brute Forcer, Host Discovery
+- **Tech Used**: `socket`, `paramiko`, `threading`
+- **Run**: Choose module via command-line input.
+- **Location**: [`3_Penetration_Testing_Toolkit/`](./3_Penetration_Testing_Toolkit)
 
-folder_to_monitor = "test_files"
+---
 
-2. Web Vulnerability Scanner
+###  4. Advanced Encryption Tool
+- **Purpose**: Encrypt and decrypt files using AES-256 encryption (Fernet)
+- **Tech Used**: `cryptography`, `hashlib`, `base64`
+- **Run**: Choose to encrypt or decrypt. Enter file path and password.
+- **Location**: [`4_AES_Encryption_Tool/`](./4_AES_Encryption_Tool)
 
--->Description
-This scanner detects common web vulnerabilities like SQL Injection and Cross-Site Scripting (XSS).
+---
 
---> How to Run
-Run the code.
-Enter a URL of a test website like:
-https://testphp.vulnweb.com
-The script will crawl forms and check them for common vulnerabilities.
---> Inputs Needed
-A URL to a vulnerable/test web app (example: https://testphp.vulnweb.com).
+##  How to Run All Projects
+1. Clone or download this repository.
+2. Open each `.ipynb` file in **Jupyter Notebook** or `.py` file in **VS Code**.
+3. Follow instructions in each folder's `README.md`.
 
-3. Penetration Testing Toolkit
+---
 
--->Description
-Includes:
-Port Scanner
-SSH Brute-Force Tester
-Network Host Discovery
--->How to Run
-Run the script, then select the option (1, 2, or 3):
-
-Option 1: Port Scanner
-
-Input: Any IP or domain (e.g., 192.168.1.1 or testphp.vulnweb.com)
-
-Option 2: SSH Brute-Force
-
-IP: test.rebex.net
-
-Username: demo
-
-Password list is hardcoded: ['admin', '1234', 'password', 'root', 'toor']
-
-Option 3: Host Discovery
-
-IP Prefix: 192.168.1 will scan from 192.168.1.1 to 192.168.1.254
-
-
-4. Advanced Encryption Tool
-
--->Description
-
-This project allows you to encrypt and decrypt any file using AES-256 (Fernet).
-
--->How to Run
-
-Run the script.
-
-Select:
-
-1 for encryption
-
-2 for decryption
-
-Input full path of file (e.g., C:/Users/RAYI/Documents/file.txt)
-
-Input a password (custom; it will generate a key from it)
---> Inputs Needed
-
-File path: e.g., C:/Users/RAYI/Documents/file.txt
-
-Password: Your own custom password
+## Deployment Instructions
+If submitting for review:
+1. Ensure each project runs successfully.
+2. Push to GitHub via terminal:
+   ```bash
+   git init
+   git add .
+   git commit -m "✅ Added all cybersecurity projects"
+   git remote add origin https://github.com/YourUsername/YourRepoName.git
+   git push -u origin main
